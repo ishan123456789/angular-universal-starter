@@ -88,7 +88,7 @@ providers: [
 ```
 to work with REQUEST and RESPONSE via DI - this is necessary for implementing UniversalStorage when working with cookies.
 
-- `webpack.config.js` is written exclusively for building server.ts file in server.js, since angular-cli has [bug](https: //github.com / angular/angular-cli/issues/7200) to work with 3d dependencies. - To solve some problems, use the following code in `server.ts` Solving the problems of global variables, including `document is not defined` and `window is not defined`
+- `webpack.config.js` is written exclusively for building server.ts file in server.js, since angular-cli has [bug](https://github.com/angular/angular-cli/issues/7200) to work with 3d dependencies. - To solve some problems, use the following code in `server.ts` Solving the problems of global variables, including `document is not defined` and `window is not defined`
 ```ts
 const domino = require('domino');
 const fs = require('fs');
